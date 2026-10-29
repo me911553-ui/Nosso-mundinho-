@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#7b1025">
+  <meta name="description" content="Um cantinho digital feito com amor para Mary e Higor.">
+  <title>Nosso Mundinho ♡ | Mary & Higor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+*{box-sizing:border-box}
+:root{--wine:#74172b;--wine-dark:#4a0d1b;--red:#a52c43;--rose:#d87887;--blush:#f8e9e8;--cream:#fffaf5;--ink:#38232a;--muted:#8b6b70;--line:#ead4d4;--serif:"Playfair Display",Georgia,serif;--sans:"DM Sans",Arial,sans-serif}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--sans);line-height:1.6}
+button,a,input{font:inherit}button{cursor:pointer}a{color:inherit;text-decoration:none}
+.site-header{height:72px;padding:0 clamp(18px,6vw,88px);display:flex;align-items:center;justify-content:space-between;background:rgba(255,250,245,.94);border-bottom:1px solid rgba(116,23,43,.1);position:sticky;top:0;z-index:20;backdrop-filter:blur(12px)}
+.brand{font-family:var(--serif);font-size:1.2rem;font-weight:700;color:var(--wine)}.brand-heart{color:var(--red);margin-right:7px}
+nav{display:flex;gap:28px;font-size:.9rem;color:#6e4c52}nav a:hover{color:var(--red)}.menu-toggle{display:none;background:none;border:0;color:var(--wine);font-size:1.5rem}
+.section{position:relative}.hero{min-height:590px;padding:95px 20px 75px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden;color:#fff8f1;background:radial-gradient(ellipse at 18% 15%,rgba(218,120,135,.45),transparent 35%),radial-gradient(ellipse at 82% 82%,rgba(40,4,15,.4),transparent 38%),linear-gradient(135deg,#8e2137,#5d0d20 75%)}
+.hero:before,.hero:after{content:"";position:absolute;width:290px;height:290px;border:1px solid rgba(255,240,230,.16);border-radius:50%;pointer-events:none}.hero:before{left:-120px;top:70px}.hero:after{right:-130px;bottom:-100px;width:400px;height:400px}
+.hero-ornament{font-size:2.7rem;color:#efc1c4;margin-bottom:12px}.eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:.68rem;font-weight:700;color:var(--rose);margin:0 0 12px}.hero .eyebrow{color:#f1c8ca}
+h1,h2,h3,p{margin-top:0}h1,h2{font-family:var(--serif);font-weight:600;line-height:1.15}h1{font-size:clamp(3.2rem,8vw,6.3rem);margin:0 0 18px;letter-spacing:-.045em}.amp{font-style:italic;color:#efb7bf;font-weight:500}h2{font-size:clamp(2rem,4vw,3.2rem);margin-bottom:16px}.hero-copy{max-width:510px;font-size:1.05rem;color:#f4dfe0;margin-bottom:30px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}.button{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;padding:12px 21px;border:1px solid transparent;font-weight:700;font-size:.88rem;transition:transform .2s,background .2s,border-color .2s}.button:hover{transform:translateY(-2px)}.button-light{background:#fff8f1;color:var(--wine)}.button-light span{font-size:1.15rem}.button-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.4)}.button-ghost:hover{background:rgba(255,255,255,.1)}.button-primary{background:var(--wine);color:white}.button-primary:hover{background:var(--red)}.button-outline{border-color:#c58c95;color:var(--wine);background:transparent}.hero-stamp{position:absolute;right:clamp(20px,10vw,150px);bottom:45px;width:94px;height:94px;border:1px solid rgba(255,255,255,.5);border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:1.5rem;color:#f4c3c9;transform:rotate(10deg)}.hero-stamp small{font-size:.5rem;text-transform:uppercase;letter-spacing:.12em;line-height:1.3;color:#f6d9db}.hero-bottom-note{position:absolute;bottom:20px;left:0;right:0;font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;color:#dcb2b9}
+.counter-wrap{padding:0 20px 70px;background:linear-gradient(var(--wine) 0 45%,var(--cream) 45%)}.counter-card{max-width:900px;margin:auto;position:relative;text-align:center;background:#fffdf9;border:1px solid #efd8d6;box-shadow:0 20px 55px #4d10141a;border-radius:20px;padding:42px 25px 28px}.counter-card h2{font-size:clamp(1.8rem,3vw,2.6rem)}.counter-sub{color:var(--muted);font-size:.95rem}.counter{display:flex;justify-content:center;gap:clamp(12px,4vw,48px);margin:28px auto 20px}.counter div{display:flex;flex-direction:column;min-width:65px}.counter strong{font-family:var(--serif);font-size:clamp(1.8rem,5vw,3rem);color:var(--wine);line-height:1.1}.counter span{font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin-top:8px}.tiny-note{font-size:.72rem;color:#a58a8d;margin:10px auto 0;max-width:650px}
+.section-pad{padding:82px clamp(18px,6vw,88px)}.section-heading{text-align:center;max-width:650px;margin:0 auto 42px}.section-heading>p:last-child{color:var(--muted);font-size:.95rem}.section-heading h2{color:var(--wine)}
+.album-grid{max-width:1000px;margin:auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;align-items:center}.photo-card{padding:13px 13px 20px;background:#fff;border:1px solid #f0dddd;box-shadow:0 12px 25px #641b2512;text-align:center;transition:transform .25s}.photo-card:hover{transform:translateY(-5px) rotate(0)}.rotate-left{transform:rotate(-2deg)}.rotate-right{transform:rotate(2deg)}.photo-placeholder{aspect-ratio:4/4.5;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;gap:6px}.photo-placeholder span{font-size:3rem}.photo-placeholder small{font-size:.7rem;letter-spacing:.05em}.rose-bg{background:linear-gradient(145deg,#c96a7a,#7e1b32)}.blush-bg{background:linear-gradient(145deg,#f2c5c7,#b64b61);color:#8d2940}.wine-bg{background:linear-gradient(145deg,#9b344a,#4b0b1b)}.photo-card p{font-family:var(--serif);font-size:1.15rem;margin:15px 0 2px}.photo-date{font-size:.7rem;color:#a58a8d}.upload-row{text-align:center;margin:35px auto 0;max-width:700px}.upload-button{cursor:pointer}.upload-row .tiny-note{margin-top:14px}.upload-row code{background:#f4e5e4;padding:2px 4px;border-radius:4px}
+.dark-section{background:linear-gradient(135deg,#4a0d1b,#77162b);color:#fff7f2}.light-heading h2{color:#fff7f2}.light-heading>p:last-child{color:#e5c5ca}.envelope-grid{max-width:1050px;margin:auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.envelope-card{border:1px solid #ffffff38;background:#ffffff0b;color:#fff8f1;border-radius:14px;padding:24px 15px 20px;display:flex;align-items:center;flex-direction:column;text-align:center;min-height:165px;transition:background .2s,transform .2s}.envelope-card:hover{background:#ffffff18;transform:translateY(-4px)}.envelope-icon{font-size:2.3rem;color:#f0b5be;margin-bottom:9px}.envelope-card strong{font-family:var(--serif);font-size:1.1rem;font-weight:600}.envelope-card small{font-size:.75rem;color:#e5c5ca;margin-top:5px}
+.games-grid{max-width:1100px;margin:auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.game-card{border:1px solid var(--line);background:#fffdfa;border-radius:17px;padding:25px;box-shadow:0 8px 20px #641b2508}.game-icon{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:#f8e4e4;color:var(--wine);font-size:1.5rem;margin-bottom:19px}.game-card h3{font-family:var(--serif);font-size:1.4rem;color:var(--wine);margin-bottom:8px}.game-card>p:not(.eyebrow){font-size:.87rem;color:var(--muted);min-height:66px}.game-card .eyebrow{font-size:.6rem;margin-bottom:5px}
+.game-stage{max-width:900px;margin:35px auto 0;border:1px solid var(--line);background:#fffdf9;border-radius:20px;padding:clamp(20px,4vw,38px);min-height:160px;box-shadow:0 10px 30px #641b2508}.stage-empty{text-align:center;color:var(--muted)}.stage-empty span{font-size:2rem;color:var(--rose)}.stage-empty h3{font-family:var(--serif);color:var(--wine);margin:8px 0}.stage-empty p{margin:0;font-size:.88rem}.stage-title{text-align:center;font-family:var(--serif);font-size:1.7rem;color:var(--wine);margin-bottom:18px}.quiz-question{font-weight:700;text-align:center;margin:12px auto 20px}.quiz-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;max-width:620px;margin:auto}.quiz-option{border:1px solid var(--line);background:white;color:var(--ink);border-radius:10px;padding:12px}.quiz-option:hover{border-color:var(--rose);background:#fff4f4}.feedback{text-align:center;margin:18px 0 0;color:var(--wine);font-weight:700}.stage-center{text-align:center}.memory-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;max-width:480px;margin:20px auto}.memory-tile{height:76px;border-radius:12px;border:1px solid #e6c7ca;background:#f8e8e7;color:var(--wine);font-size:1.8rem}.memory-tile.flipped,.memory-tile.matched{background:var(--wine);color:white}.memory-tile.matched{opacity:.72}.treasure-clue{background:#f8e8e7;border-radius:12px;padding:18px;text-align:center;margin:16px auto;max-width:600px}.treasure-answer{display:flex;gap:8px;max-width:500px;margin:14px auto}.treasure-answer input{flex:1;min-width:0;border:1px solid var(--line);border-radius:9px;padding:11px}.wheel-result{font-family:var(--serif);font-size:1.4rem;color:var(--wine);margin:20px auto}.card-message{font-family:var(--serif);font-size:1.45rem;color:var(--wine);max-width:600px;margin:18px auto;text-align:center}.stage-button{margin:8px 4px}
+.letter-section{display:grid;grid-template-columns:1fr 1.15fr;gap:clamp(35px,7vw,100px);align-items:center;background:#f7e9e6}.letter-visual{display:grid;place-items:center;min-height:280px}.big-envelope{position:relative;width:min(280px,80%);aspect-ratio:1.25;background:#b9465d;border-radius:8px;box-shadow:0 18px 40px #4e0d1d28;display:grid;place-items:center;overflow:hidden}.big-envelope:before{content:"";position:absolute;top:-40%;left:0;width:100%;height:100%;background:#d87584;transform:rotate(45deg) scale(.8);border-radius:10px}.big-envelope:after{content:"";position:absolute;bottom:-55%;left:-10%;width:120%;height:100%;background:#a42b43;transform:rotate(45deg);border-radius:10px}.big-envelope span{z-index:1;width:62px;height:62px;display:grid;place-items:center;background:#fff2ec;color:var(--wine);border-radius:50%;font-size:2rem;box-shadow:0 3px 12px #4a0d1b20}.letter-copy h2{color:var(--wine)}.letter-copy>p:not(.eyebrow){color:#795b60;font-size:.94rem}.signature{font-family:var(--serif);font-size:1.3rem!important;color:var(--wine)!important}
+.footer{text-align:center;padding:40px 20px 45px;background:#4a0d1b;color:#f3dce0}.footer-heart{font-size:1.8rem;color:#e99aaa}.footer p{font-family:var(--serif);margin:8px 0}.footer small{font-size:.75rem;color:#d2aeb5}
+.modal-backdrop{position:fixed;inset:0;background:#24050ccf;display:grid;place-items:center;padding:20px;z-index:100;overflow:auto}.modal-backdrop[hidden]{display:none}.modal{position:relative;background:var(--cream);border-radius:20px;padding:35px clamp(22px,5vw,48px);max-width:560px;width:100%;text-align:center;box-shadow:0 20px 80px #0005;max-height:90vh;overflow:auto}.modal-close{position:absolute;right:15px;top:10px;background:transparent;border:0;font-size:1.8rem;color:var(--wine)}.modal-flower{font-size:2rem;color:var(--rose)}.modal h2{font-size:2.1rem;color:var(--wine)}.modal-content{color:#76545a;white-space:pre-line;margin:18px 0 25px}.floating-hearts{position:fixed;inset:0;pointer-events:none;z-index:1;overflow:hidden}.floating-heart{position:absolute;bottom:-30px;color:#d8788750;animation:floatUp linear forwards}@keyframes floatUp{to{transform:translateY(-110vh) rotate(30deg);opacity:0}}
+@media(max-width:760px){.site-header{height:64px}.menu-toggle{display:block}nav{display:none;position:absolute;top:63px;left:0;right:0;background:var(--cream);padding:18px 24px 22px;flex-direction:column;gap:17px;border-bottom:1px solid var(--line)}nav.open{display:flex}.hero{min-height:570px;padding-top:75px}.hero-stamp{width:75px;height:75px;right:20px;bottom:50px}.hero-stamp small{font-size:.42rem}.counter-wrap{padding-bottom:48px}.counter-card{padding:32px 12px 23px}.counter{gap:13px}.counter div{min-width:53px}.counter strong{font-size:1.75rem}.counter span{font-size:.58rem;letter-spacing:.05em}.section-pad{padding-top:60px;padding-bottom:60px}.album-grid{grid-template-columns:1fr;max-width:330px;gap:25px}.photo-card{max-width:330px;width:100%;margin:auto}.envelope-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.envelope-card{padding:19px 10px;min-height:155px}.envelope-card strong{font-size:1rem}.games-grid{grid-template-columns:1fr;max-width:460px}.game-card>p:not(.eyebrow){min-height:0}.letter-section{grid-template-columns:1fr;gap:15px}.letter-visual{min-height:210px}.big-envelope{width:220px}.quiz-options{grid-template-columns:1fr}.memory-grid{gap:7px}.memory-tile{height:62px}.treasure-answer{flex-direction:column}.hero-bottom-note{font-size:.55rem;letter-spacing:.07em}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+</style>
+</head>
+<body>
+  <div class="floating-hearts" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Nosso Mundinho, início"><span class="brand-heart">♥</span> nosso mundinho</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav id="mainNav">
+      <a href="#album">Álbum</a><a href="#abra-quando">Abra quando</a><a href="#jogos">Joguinhos</a><a href="#cartinhas">Cartinhas</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="inicio">
+      <div class="hero-ornament" aria-hidden="true">❦</div>
+      <p class="eyebrow">feito com amor, só pra você</p>
+      <h1>Mary <span class="amp">&</span> Higor</h1>
+      <p class="hero-copy">Em meio a tanta gente no mundo, meu coração ainda escolhe você.</p>
+      <div class="hero-actions">
+        <a class="button button-light" href="#album">Entrar no nosso mundinho <span>♡</span></a>
+        <button class="button button-ghost" id="surpriseHero">Uma surpresa pra você</button>
+      </div>
+      <div class="hero-stamp">♡<small>meu lugar<br>favorito</small></div>
+      <div class="hero-bottom-note">uma história que ainda está sendo escrita</div>
+    </section>
+
+    <section class="counter-wrap section" aria-label="Contador do namoro">
+      <div class="counter-card">
+        <p class="eyebrow">desde 7 de julho de 2025</p>
+        <h2>Todo dia com você é meu favorito.</h2>
+        <p class="counter-sub">E olha quanto tempo nosso amor já está crescendo…</p>
+        <div class="counter" id="relationshipCounter" aria-live="polite">
+          <div><strong id="days">—</strong><span>dias</span></div>
+          <div><strong id="hours">—</strong><span>horas</span></div>
+          <div><strong id="minutes">—</strong><span>minutos</span></div>
+          <div><strong id="seconds">—</strong><span>segundos</span></div>
+        </div>
+        <p class="tiny-note">O contador começa em 07/07/2025. O tempo é calculado no seu dispositivo.</p>
+      </div>
+    </section>
+
+    <section class="section section-pad" id="album">
+      <div class="section-heading">
+        <p class="eyebrow">nossos pedacinhos de eternidade</p>
+        <h2>Álbum de memórias</h2>
+        <p>Troque as imagens de exemplo pelas fotos de vocês e guarde aqui os momentos que fazem seu coração sorrir.</p>
+      </div>
+      <div class="album-grid" id="albumGrid">
+        <article class="photo-card rotate-left">
+          <div class="photo-placeholder rose-bg"><span>♡</span><small>coloque nossa foto aqui</small></div>
+          <p>meu sorriso favorito</p><span class="photo-date">uma memória nossa</span>
+        </article>
+        <article class="photo-card rotate-right">
+          <div class="photo-placeholder blush-bg"><span>✿</span><small>coloque nossa foto aqui</small></div>
+          <p>com você, tudo é melhor</p><span class="photo-date">um dia especial</span>
+        </article>
+        <article class="photo-card rotate-left">
+          <div class="photo-placeholder wine-bg"><span>♥</span><small>coloque nossa foto aqui</small></div>
+          <p>meu lugar é do seu lado</p><span class="photo-date">pra lembrar sempre</span>
+        </article>
+      </div>
+      <div class="upload-row">
+        <label class="button button-outline upload-button" for="photoUpload">＋ Adicionar fotos do celular</label>
+        <input id="photoUpload" type="file" accept="image/*" multiple hidden>
+        <p class="tiny-note">As fotos adicionadas ficam nesta página enquanto ela estiver aberta. Para deixá-las no site publicado, coloque os arquivos na pasta <code>fotos</code> e atualize o HTML.</p>
+      </div>
+    </section>
+
+    <section class="section section-pad dark-section" id="abra-quando">
+      <div class="section-heading light-heading">
+        <p class="eyebrow">cartas para os dias que você precisar</p>
+        <h2>Abra quando…</h2>
+        <p>Escolha um envelope. Cada um guarda um pedacinho do meu coração pra você.</p>
+      </div>
+      <div class="envelope-grid" id="envelopeGrid">
+        <button class="envelope-card" data-letter="triste"><span class="envelope-icon">✉</span><strong>Estiver triste</strong><small>um abraço em palavras</small></button>
+        <button class="envelope-card" data-letter="saudade"><span class="envelope-icon">✉</span><strong>Sentir saudade de mim</strong><small>lembra que eu tô aqui</small></button>
+        <button class="envelope-card" data-letter="inseguro"><span class="envelope-icon">✉</span><strong>Precisar se lembrar do seu valor</strong><small>você é muito especial</small></button>
+        <button class="envelope-card" data-letter="bravo"><span class="envelope-icon">✉</span><strong>Estiver bravo comigo</strong><small>vamos conversar com carinho</small></button>
+        <button class="envelope-card" data-letter="feliz"><span class="envelope-icon">✉</span><strong>Estiver muito feliz</strong><small>quero comemorar com você</small></button>
+        <button class="envelope-card" data-letter="dormir"><span class="envelope-icon">✉</span><strong>For dormir</strong><small>um beijinho de boa noite</small></button>
+      </div>
+    </section>
+
+    <section class="section section-pad" id="jogos">
+      <div class="section-heading">
+        <p class="eyebrow">vamos brincar um pouquinho?</p>
+        <h2>Nosso cantinho de jogos</h2>
+        <p>Pequenas brincadeiras pra testar a memória, dar risada e lembrar do nosso amor.</p>
+      </div>
+      <div class="games-grid">
+        <article class="game-card">
+          <div class="game-icon">♡</div><p class="eyebrow">jogo 01</p><h3>Quiz de casal</h3>
+          <p>Será que você lembra das datas e dos detalhes da nossa história?</p>
+          <button class="button button-primary" id="startQuiz">Jogar quiz</button>
+        </article>
+        <article class="game-card">
+          <div class="game-icon">✿</div><p class="eyebrow">jogo 02</p><h3>Jogo da memória</h3>
+          <p>Encontre todos os pares de símbolos românticos.</p>
+          <button class="button button-primary" id="startMemory">Jogar memória</button>
+        </article>
+        <article class="game-card">
+          <div class="game-icon">✉</div><p class="eyebrow">jogo 03</p><h3>Cartinha surpresa</h3>
+          <p>Toque no botão e receba uma mensagem aleatória feita com carinho.</p>
+          <button class="button button-primary" id="drawCard">Tirar cartinha</button>
+        </article>
+        <article class="game-card">
+          <div class="game-icon">⌕</div><p class="eyebrow">jogo 04</p><h3>Caça ao tesouro</h3>
+          <p>Resolva as pistas para encontrar uma declaração escondida.</p>
+          <button class="button button-primary" id="startTreasure">Começar pistas</button>
+        </article>
+        <article class="game-card">
+          <div class="game-icon">✧</div><p class="eyebrow">jogo 05</p><h3>Roleta do amor</h3>
+          <p>Gire e descubra uma missão fofinha para fazerem juntos.</p>
+          <button class="button button-primary" id="spinWheel">Girar roleta</button>
+        </article>
+      </div>
+      <div class="game-stage" id="gameStage" aria-live="polite">
+        <div class="stage-empty"><span>♡</span><h3>Escolha um jogo para começar</h3><p>O próximo momento fofo está a um clique de distância.</p></div>
+      </div>
+    </section>
+
+    <section class="section section-pad letter-section" id="cartinhas">
+      <div class="letter-visual" aria-hidden="true"><div class="big-envelope"><span>♥</span></div></div>
+      <div class="letter-copy">
+        <p class="eyebrow">uma coisa que eu queria te dizer</p>
+        <h2>Se eu pudesse te dar uma coisa…</h2>
+        <p>Eu te daria a chance de se enxergar pelos meus olhos, nem que fosse por um instante. Talvez assim você entendesse o quanto é importante pra mim e quantos detalhes seus fazem diferença nos meus dias.</p>
+        <p>Não prometo que todos os dias serão perfeitos, mas quero que a gente continue escolhendo conversar, cuidar e aprender um com o outro. Você faz parte de uma história que eu guardo com muito carinho.</p>
+        <p class="signature">Com amor, Mary ♡</p>
+        <button class="button button-primary" id="openMainLetter">Ler uma mensagem secreta</button>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-heart">♥</div><p>feito com carinho por Mary, para Higor</p><small>que a gente nunca esqueça de cuidar do que faz bem ao coração.</small>
+    </footer>
+  </main>
+
+  <div class="modal-backdrop" id="modalBackdrop" hidden>
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Fechar">×</button>
+      <div class="modal-flower">❦</div><p class="eyebrow">uma cartinha pra você</p>
+      <h2 id="modalTitle">Meu amor</h2>
+      <div class="modal-content" id="modalContent"></div>
+      <button class="button button-primary" id="modalOkay">Guardar no coração ♡</button>
+    </section>
+  </div>
+  <script>
+const $ = (s, root=document) => root.querySelector(s);
+const $$ = (s, root=document) => [...root.querySelectorAll(s)];
+
+const letters = {
+  triste: {title:"Abra quando estiver triste", text:"Meu amor, respira um pouquinho. Você não precisa resolver tudo agora e nem fingir que está bem o tempo todo. Queria poder te dar um abraço demorado e lembrar que você não precisa enfrentar tudo sozinho. Você importa muito pra mim, inclusive nos dias em que não consegue enxergar isso. Um passo de cada vez, tá? Eu te amo. ♡"},
+  saudade: {title:"Abra quando sentir saudade de mim", text:"Se eu pudesse, encurtava a distância agora e aparecia aí só pra te encher de abraço e beijo. Enquanto isso não dá, lembra que tem alguém aqui pensando em você e torcendo pelo seu sorriso. Guarda esse carinho até a gente se encontrar de novo. Tô mandando um beijo daqueles! ♡"},
+  inseguro: {title:"Abra quando precisar se lembrar do seu valor", text:"Você não precisa ser perfeito pra ser amado. Eu gosto de você de verdade, com suas qualidades, suas manias e até as partes que você ainda está aprendendo a entender. Espero que você nunca esqueça que merece carinho, respeito e paz. Eu vejo muita coisa bonita em você. ♡"},
+  bravo: {title:"Abra quando estiver bravo comigo", text:"Talvez a gente não concorde em tudo, e tudo bem. Eu não quero que a gente precise vencer uma discussão; quero que a gente consiga se ouvir. Quando estiver pronto, vamos conversar com calma, sem tentar machucar um ao outro. Nosso amor também merece cuidado nos momentos difíceis. ♡"},
+  feliz: {title:"Abra quando estiver muito feliz", text:"EU QUERO SABER DE TUDO! Me conta cada detalhe, até os pequenos, porque sua felicidade também deixa meu coração feliz. Queria estar aí pra comemorar do seu lado, te abraçar e dizer o quanto fico feliz em te ver bem. Que venham muitos outros motivos pra sorrir! ♡"},
+  dormir: {title:"Abra quando for dormir", text:"Boa noite, meu amor. Descansa essa cabecinha e deixa as preocupações pra amanhã. Espero que seu sono seja tranquilo e que você acorde lembrando que é muito amado. Se eu pudesse, te dava um beijo na testa e ficava abraçadinha com você até dormir. Sonha comigo. ♡"}
+};
+const surpriseNotes = [
+  "Você é uma das partes mais bonitas da minha história. ♡",
+  "Se eu pudesse escolher de novo, ainda ia querer conhecer você.",
+  "Seu abraço é um daqueles lugares em que meu coração desacelera.",
+  "Lembrete do dia: você é especial pra mim, até nos dias comuns.",
+  "Quero colecionar com você mais risadas, conversas e memórias.",
+  "Meu carinho por você mora nos detalhes que talvez você nem perceba."
+];
+const missions = [
+  "Mandem um áudio dizendo uma coisa que admiram um no outro.",
+  "Escolham uma música que lembre vocês e escutem juntos.",
+  "Cada um diga uma memória favorita do relacionamento.",
+  "Troquem três elogios sinceros, sem repetir.",
+  "Planejem um encontro simples que gostariam de ter.",
+  "Mandem uma foto que faça lembrar um momento especial.",
+  "Façam uma pergunta que sempre tiveram curiosidade de fazer."
+];
+const quiz = [
+  {q:"Em que data nossa história começou?", options:["07/07/2025","07/09/2025","24/09/2025","14/02/2026"], correct:0, explain:"Nossa data especial é 7 de julho de 2025. ♡"},
+  {q:"Qual é a ideia principal deste site?", options:["Fazer uma prova","Guardar memórias e carinho","Escolher um filme","Organizar tarefas"], correct:1, explain:"Um cantinho digital pra guardar a história de vocês!"},
+  {q:"O que vale mais numa relação?", options:["Nunca discordar","Adivinhar tudo","Conversar e cuidar um do outro","Fingir que nada acontece"], correct:2, explain:"Carinho também é escuta, respeito e conversa. ♡"},
+  {q:"Qual é o melhor próximo passo?", options:["Criar uma nova memória","Apagar as fotos","Parar de conversar","Esquecer o carinho"], correct:0, explain:"Criar mais uma memória juntinhos, claro!"}
+];
+let quizIndex=0, quizScore=0, memoryFirst=null, memoryLock=false, memoryMatches=0, treasureIndex=0;
+const treasure = [
+  {clue:"Pista 1: sou o lugar onde guardamos os momentos que podemos rever com os olhos. O que sou?", answer:["album","álbum","fotos","foto"], hint:"Procure na seção de memórias."},
+  {clue:"Pista 2: tenho um selo, posso ser aberta e guardo palavras que aquecem o coração. O que sou?", answer:["carta","cartinha","envelope"], hint:"Pense nas mensagens escritas."},
+  {clue:"Pista 3: não sou presente embrulhado. Sou o que cresce quando duas pessoas cuidam uma da outra. O que sou?", answer:["amor","carinho","afeto"], hint:"É o tema deste site inteiro."}
+];
+
+function showModal(title, content){
+  $("#modalTitle").textContent=title;
+  $("#modalContent").textContent=content;
+  $("#modalBackdrop").hidden=false;
+  $("#modalOkay").focus();
+}
+function closeModal(){ $("#modalBackdrop").hidden=true; }
+$("#modalClose").addEventListener("click",closeModal);
+$("#modalOkay").addEventListener("click",closeModal);
+$("#modalBackdrop").addEventListener("click",e=>{if(e.target===$("#modalBackdrop"))closeModal()});
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeModal()});
+$$(".envelope-card").forEach(btn=>btn.addEventListener("click",()=>{const item=letters[btn.dataset.letter];showModal(item.title,item.text)}));
+$("#openMainLetter").addEventListener("click",()=>showModal("Uma mensagem só sua","Higor, eu espero que este cantinho te lembre do quanto você é importante pra mim. Não é sobre ter uma história perfeita; é sobre continuar criando momentos, aprendendo e escolhendo o cuidado. Obrigada por fazer parte da minha vida. Que a gente tenha muitas páginas bonitas pra escrever. Com amor, Mary. ♡"));
+$("#surpriseHero").addEventListener("click",()=>showModal("Surpresa, meu amor!","Se você chegou até aqui, fica sabendo: tem alguém que preparou esse cantinho pensando em você. Que cada clique seja um lembrete de carinho, de saudade boa e de tudo que ainda podemos viver. ♡"));
+
+function updateCounter(){
+  const start=new Date(2025,6,7,0,0,0).getTime();
+  let diff=Math.max(0,Date.now()-start);
+  const days=Math.floor(diff/86400000); diff%=86400000;
+  const hours=Math.floor(diff/3600000); diff%=3600000;
+  const minutes=Math.floor(diff/60000); const seconds=Math.floor((Date.now()-start)/1000)%60;
+  $("#days").textContent=days.toLocaleString("pt-BR");
+  $("#hours").textContent=String(hours).padStart(2,"0");
+  $("#minutes").textContent=String(minutes).padStart(2,"0");
+  $("#seconds").textContent=String(seconds).padStart(2,"0");
+}
+updateCounter();setInterval(updateCounter,1000);
+
+const photoUpload=$("#photoUpload");
+photoUpload.addEventListener("change",()=>{
+  const files=[...photoUpload.files].filter(f=>f.type.startsWith("image/"));
+  files.forEach(file=>{
+    const url=URL.createObjectURL(file);
+    const card=document.createElement("article");card.className="photo-card";
+    const img=document.createElement("img");img.src=url;img.alt="Foto adicionada ao álbum";img.style.cssText="width:100%;aspect-ratio:4/4.5;object-fit:cover;display:block";
+    const caption=document.createElement("p");caption.textContent=file.name.replace(/\.[^.]+$/,"").replace(/[-_]/g," ");
+    const date=document.createElement("span");date.className="photo-date";date.textContent="uma memória nossa";
+    card.append(img,caption,date);$("#albumGrid").prepend(card);
+  });
+  if(files.length)showModal("Fotos adicionadas!","As fotos aparecem no álbum nesta sessão. Para que também apareçam quando outra pessoa abrir o link publicado, coloque as imagens na pasta do site e adicione-as ao HTML. ♡");
+  photoUpload.value="";
+});
+
+const stage=$("#gameStage");
+function stageTitle(title,sub=""){stage.innerHTML=`<h3 class="stage-title">${title}</h3>${sub?`<p class="stage-center">${sub}</p>`:""}`}
+function startQuiz(){quizIndex=0;quizScore=0;renderQuiz()}
+function renderQuiz(){
+  if(quizIndex>=quiz.length){stageTitle("Fim do quiz!","Você acertou "+quizScore+" de "+quiz.length+" perguntas. O importante é continuar aprendendo um sobre o outro. ♡");stage.insertAdjacentHTML("beforeend",'<div class="stage-center"><button class="button button-primary stage-button" id="quizAgain">Jogar de novo</button></div>');$("#quizAgain").onclick=startQuiz;return}
+  const item=quiz[quizIndex];stageTitle("Quiz de casal",`Pergunta ${quizIndex+1} de ${quiz.length}`);
+  stage.insertAdjacentHTML("beforeend",`<p class="quiz-question">${item.q}</p><div class="quiz-options">${item.options.map((o,i)=>`<button class="quiz-option" data-answer="${i}">${o}</button>`).join("")}</div><p class="feedback" id="quizFeedback"></p><div class="stage-center"><button class="button button-primary stage-button" id="quizNext" hidden>Próxima pergunta →</button></div>`);
+  $$(".quiz-option",stage).forEach(btn=>btn.onclick=()=>{
+    if($("#quizNext").hidden===false)return;
+    const good=Number(btn.dataset.answer)===item.correct;if(good)quizScore++;
+    $$(".quiz-option",stage).forEach(b=>{b.disabled=true;if(Number(b.dataset.answer)===item.correct)b.style.borderColor="#5a8b69"});
+    $("#quizFeedback").textContent=(good?"Acertou! ":"Quase! ")+item.explain;$("#quizNext").hidden=false;
+  });
+  $("#quizNext").onclick=()=>{quizIndex++;renderQuiz()};
+}
+$("#startQuiz").addEventListener("click",startQuiz);
+
+function startMemory(){
+  stageTitle("Jogo da memória","Encontre os 6 pares de símbolos. Toque em duas cartas para revelar.");
+  const icons=["♥","♡","✿","❦","✧","💌","♥","♡","✿","❦","✧","💌"].sort(()=>Math.random()-.5);
+  memoryFirst=null;memoryLock=false;memoryMatches=0;
+  stage.insertAdjacentHTML("beforeend",`<div class="memory-grid">${icons.map((icon,i)=>`<button class="memory-tile" data-icon="${icon}" aria-label="Carta ${i+1}">?</button>`).join("")}</div><p class="feedback" id="memoryFeedback">Pares encontrados: 0 de 6</p><div class="stage-center"><button class="button button-outline stage-button" id="memoryAgain">Embaralhar de novo</button></div>`);
+  $$(".memory-tile",stage).forEach(tile=>tile.addEventListener("click",()=>{
+    if(memoryLock||tile.classList.contains("matched")||tile===memoryFirst)return;
+    tile.textContent=tile.dataset.icon;tile.classList.add("flipped");
+    if(!memoryFirst){memoryFirst=tile;return}
+    if(memoryFirst.dataset.icon===tile.dataset.icon){memoryFirst.classList.add("matched");tile.classList.add("matched");memoryFirst=null;memoryMatches++;$("#memoryFeedback").textContent=`Pares encontrados: ${memoryMatches} de 6`;if(memoryMatches===6)$("#memoryFeedback").textContent="Você encontrou todos! Amor e memória afiada. ♡"}
+    else{memoryLock=true;const first=memoryFirst;setTimeout(()=>{first.textContent="?";tile.textContent="?";first.classList.remove("flipped");tile.classList.remove("flipped");memoryFirst=null;memoryLock=false},700)}
+  }));
+  $("#memoryAgain").onclick=startMemory;
+}
+$("#startMemory").addEventListener("click",startMemory);
+$("#drawCard").addEventListener("click",()=>{const note=surpriseNotes[Math.floor(Math.random()*surpriseNotes.length)];stageTitle("Sua cartinha surpresa");stage.insertAdjacentHTML("beforeend",`<div class="card-message">“${note}”</div><div class="stage-center"><button class="button button-primary stage-button" id="drawAgain">Quero outra cartinha ♡</button></div>`);$("#drawAgain").onclick=()=>$("#drawCard").click()});
+
+function startTreasure(){treasureIndex=0;renderTreasure()}
+function renderTreasure(){
+  if(treasureIndex>=treasure.length){stageTitle("Tesouro encontrado!","A surpresa final é esta: você é amado, e a nossa história é feita de pequenos gestos, conversas e memórias. ♡");stage.insertAdjacentHTML("beforeend",'<div class="stage-center"><button class="button button-primary stage-button" id="treasureAgain">Jogar novamente</button></div>');$("#treasureAgain").onclick=startTreasure;return}
+  const t=treasure[treasureIndex];stageTitle("Caça ao tesouro romântica",`Pista ${treasureIndex+1} de ${treasure.length}`);
+  stage.insertAdjacentHTML("beforeend",`<div class="treasure-clue">${t.clue}</div><form class="treasure-answer" id="treasureForm"><input id="treasureInput" placeholder="Digite sua resposta…" autocomplete="off" required><button class="button button-primary">Responder</button></form><p class="feedback" id="treasureFeedback"></p><div class="stage-center"><button class="button button-outline stage-button" id="treasureHint">Preciso de uma dica</button></div>`);
+  $("#treasureForm").onsubmit=e=>{e.preventDefault();const ans=$("#treasureInput").value.trim().toLocaleLowerCase("pt-BR").normalize("NFD").replace(/[\u0300-\u036f]/g,"");const accepted=t.answer.map(a=>a.normalize("NFD").replace(/[\u0300-\u036f]/g,""));if(accepted.includes(ans)){treasureIndex++;renderTreasure()}else $("#treasureFeedback").textContent="Ainda não! Tenta outra resposta. ♡"};
+  $("#treasureHint").onclick=()=>$("#treasureFeedback").textContent=t.hint;
+}
+$("#startTreasure").addEventListener("click",startTreasure);
+$("#spinWheel").addEventListener("click",()=>{
+  stageTitle("Roleta do amor","Preparados para uma missão fofinha?");
+  stage.insertAdjacentHTML("beforeend",`<div class="stage-center"><div class="wheel-result" id="wheelResult">♡ Gire para descobrir ♡</div><button class="button button-primary stage-button" id="wheelSpin">Girar a roleta</button></div>`);
+  $("#wheelSpin").onclick=()=>{const result=missions[Math.floor(Math.random()*missions.length)];$("#wheelResult").textContent=result;$("#wheelSpin").textContent="Girar novamente"};
+});
+
+$("#menuToggle").addEventListener("click",()=>{const nav=$("#mainNav");const open=nav.classList.toggle("open");$("#menuToggle").setAttribute("aria-expanded",String(open));$("#menuToggle").textContent=open?"×":"☰"});
+$$('#mainNav a').forEach(a=>a.addEventListener("click",()=>{$("#mainNav").classList.remove("open");$("#menuToggle").setAttribute("aria-expanded","false");$("#menuToggle").textContent="☰"}));
+
+const heartField=$(".floating-hearts");
+function createHeart(){const h=document.createElement("span");h.className="floating-heart";h.textContent=Math.random()>.5?"♥":"♡";h.style.left=Math.random()*100+"%";h.style.fontSize=(12+Math.random()*18)+"px";h.style.animationDuration=(8+Math.random()*8)+"s";heartField.append(h);setTimeout(()=>h.remove(),17000)}
+if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches){setInterval(createHeart,1600)}
+
+</script>
+</body>
+</html>
